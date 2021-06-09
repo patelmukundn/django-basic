@@ -3,8 +3,10 @@
 {% block page_title %}
     MY challanges for {{month}}
 {% endblock page_title %}
- 
+
 {% block content %}
+    {% include 'challenges/includes/header.html' %}
+
     <h1>{{month|title}}'s challange is</h1>
     {% if  challenge is not None%}
         <h2>{{challenge|title}}</h2>
